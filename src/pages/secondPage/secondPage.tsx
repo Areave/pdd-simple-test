@@ -1,6 +1,6 @@
 import './secondPage.scss'
 import React from 'react';
-import PageTitleComp from "../../comps/pageTitleComp/pageTitleComp";
+import PageTitleComp from "../../comps/headerTitleComp/headerTitleComp";
 import NavigationButton from "../../comps/navigationButton/navigationButton";
 import ErrorBoundary from "../errorBoundary/errorBoundary";
 import ImageComp from "../../comps/imageComp/imageComp";

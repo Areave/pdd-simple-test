@@ -1,17 +1,7 @@
 @use '../../style/style' as styles;
 
 .mainPage {
-  @include styles.forRootElements;
 
-  & .header {
-    @include styles.forHeader;
-  }
 
-  & .content {
-    @include styles.forContent;
-  }
 
-  & .footer {
-    @include styles.forFooter;
-  }
 }

@@ -50,7 +50,11 @@
 }
 
 @mixin forHeader {
+  background-color: vars.$secondary;
+  @include yellowBorder;
+  border-top:none;
   width: 100%;
+  padding: 20px;
 }
 
 @mixin forContent {
