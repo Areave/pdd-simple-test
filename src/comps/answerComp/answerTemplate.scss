@@ -1,0 +1,17 @@
+@use '../../style/style' as styles;
+
+.answer {
+  width: 30px;
+  margin: 5px;
+
+  &.wrong {
+    border: 3px solid red;
+  }
+
+  & .answerInput {
+    font-size: 16px;
+    max-width: 100%;
+
+  }
+
+}

@@ -71,6 +71,10 @@ module.exports = function (_, webpackEnv) {
         test: /\.(ts|tsx)$/,
         use: ['ts-loader']
     };
+    const jsonRule = {
+        test: /\.(json)$/,
+        use: ['json-loader']
+    };
 
     const cssRule = {
         test: /\.s?css$/,
@@ -116,7 +120,7 @@ module.exports = function (_, webpackEnv) {
         },
 
         module: {
-            rules: [tsRule, cssRule, fontsRule, imgRule]
+            rules: [tsRule, jsonRule, cssRule, fontsRule, imgRule]
         },
         optimization: {
             minimize: isProduction,
