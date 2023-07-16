@@ -15,7 +15,7 @@ export const AnswerTemplate: React.FC<any> = ({rightAnswer, index}) => {
         console.log('setIsWrong', inputValue !== rightAnswer);
     };
     return <div className={`answer ${isWrong ? 'wrong' : ''}`}>
-        <div className="">{index}</div>
+        <div className="">{index + 1}</div>
         <input className={`answerInput`} onChange={onInputChange}/>
     </div>
 };
